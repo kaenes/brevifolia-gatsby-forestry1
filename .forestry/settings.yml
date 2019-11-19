@@ -4,8 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: heading
-  label: Content
 - type: directory
   path: content/posts
   label: Blog Posts
@@ -14,6 +12,13 @@ sections:
   new_doc_ext: md
   templates:
   - blog-post
+- type: heading
+  label: fdsfsdfa
+- type: heading
+  label: Content
+- type: document
+  path: config.json
+  label: Site Info
 - type: document
   path: content/data/authors.yaml
   label: Author List
@@ -22,20 +27,19 @@ sections:
   label: Info Page
 - type: heading
   label: General Config
-- type: document
-  path: config.json
-  label: Site Info
 - type: heading
   label: sites
 - type: document
   path: src/pages/info.js
   label: test2
+  read_only: true
 - type: directory
-  path: ''
+  path: content
   label: contact
-  create: all
+  create: documents
   match: "**/*"
   templates:
+  - blog-post
   - blog-post
 upload_dir: content/images
 public_path: "/content/images"

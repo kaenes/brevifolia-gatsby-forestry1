@@ -4,11 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
-  path: src/pages/info.js
-  label: test2
-  match: "**/*"
-  read_only: false
 - type: heading
   label: Content
 - type: directory
@@ -32,6 +27,9 @@ sections:
   label: Site Info
 - type: heading
   label: sites
+- type: document
+  path: src/pages/info.js
+  label: test2
 - type: directory
   path: ''
   label: contact
